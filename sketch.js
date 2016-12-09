@@ -324,7 +324,7 @@ draw = function() {
   d.drawDots();
   //d.drawDistances(  );
   
-  if( d.totalDist() < 0.95*initLogDist ) {
+  if( d.totalDist() < 0.91*initLogDist ) {
     d = new Dots( numDots );
     d.evolveHalfStep();
     initLogDist = d.totalDist();
