@@ -322,7 +322,7 @@ draw = function() {
     background(0 , 0 , 0 , bgAlpha);
   }
   d.drawDots();
-  d.drawDistances(  );
+  //d.drawDistances(  );
   
   if( d.totalDist() < 0.95*initLogDist ) {
     d = new Dots( numDots );
