@@ -149,7 +149,7 @@ Dots.prototype.applyMutualForces = function() {
       var dAj = createVector( dAi.x , dAi.y );
       var mj = this.M[j];
       var mi = this.M[i];
-      if( mj*mi < 0 ) {
+      if( mj*mi > 0 ) {
         dAi.mult( f * abs(mj) );
         dAj.mult( -f * abs(mi) );
       } else {
