@@ -142,7 +142,7 @@ Dots.prototype.applyFrictionForces = function() {
 Dots.prototype.applyMutualForces = function() {
   for( var i = 0 ; i < this.N - 1 ; i++ ) {
     for( var j = i + 1 ; j < this.N ; j++ ) {
-      var d = this.getDist( i , j );
+      var d = this.getDist( i , j )*2;
       var f = universalConstant / pow( d * d + epsilon * epsilon , 1.5 );
       var dAi = p5.Vector.sub( this.X[i] , this.X[j] );
       dAi.normalize();
